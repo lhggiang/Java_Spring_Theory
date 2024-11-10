@@ -6,14 +6,5 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DemoController {
-//    private final EmailService emailService;
-//
-//    public DemoController(EmailService emailService) {
-//        this.emailService = emailService;
-//    }
 
-//    @GetMapping
-//    public String getEmail(){
-//        return "This is your email";
-//    }
 }
