@@ -5,19 +5,23 @@ import jakarta.annotation.PreDestroy;
 import org.springframework.stereotype.Service;
 
 @Service
-public class EmailService {
+public class EmailService implements IMessage {
     public EmailService() {
         System.out.println("Email Service created");
     }
 
-    @PostConstruct
-    public void init(){
-        System.out.println("Email Service initialized");
-    }
+//    @PostConstruct
+//    public void init(){
+//        System.out.println("Email Service initialized");
+//    }
+//
+//    @PreDestroy
+//    public void destroy(){
+//        System.out.println("Email Service destroyed");
+//    }
 
-    @PreDestroy
-    public void destroy(){
-        System.out.println("Email Service destroyed");
+    @Override
+    public void sendMessage() {
+        System.out.println("Send Message By Email");
     }
-
 }
